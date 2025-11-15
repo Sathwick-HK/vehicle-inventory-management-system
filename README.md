@@ -120,15 +120,9 @@ This project demonstrates:
 - REST API architecture  
 - Clean data modeling  
 - CRUD operations  
-- Professional project structuring for job applications  
 
-It is especially useful for:
 
-- Python Developer (0–1 YOE)  
-- Backend Developer (Python/Django)  
-- REST API Developer  
-- Software Engineer (Entry Level)  
-- Applicants to product-based companies like **Izmo Ltd**  
+
 
 ---
 
@@ -144,12 +138,4 @@ This project is part of a learning portfolio and may be expanded with:
 
 ---
 
-## 🤝 Contributions
 
-Feel free to fork the repository and submit improvements or enhancements.
-
----
-
-## 📫 Contact
-
-If you'd like to reach out regarding collaborations or questions, feel free to connect via GitHub or your personal email.
