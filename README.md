@@ -4,7 +4,7 @@
 This project is a fully functional backend API built using **Python**, **Django**, and **Django REST Framework (DRF)**.  
 It allows users to manage vehicle inventory through standard **CRUD operations**.
 
-This project is designed for **beginner-to-intermediate Python developers** applying for backend or Python developer roles requiring skills in:
+This project helps develop core backend skills, including:
 
 - REST API development  
 - Django models, serializers, views, URLs  
