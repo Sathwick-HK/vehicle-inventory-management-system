@@ -1,143 +1,212 @@
 # 🚗 Vehicle Inventory Management System – REST API
-### *A Python + Django REST Framework Backend Project*
 
-This project is a fully functional backend API built using **Python**, **Django**, and **Django REST Framework (DRF)**.  
-It allows users to manage vehicle inventory through standard **CRUD operations**.
+A production-style backend REST API built using **Python**, **Django**, and **Django REST Framework**, deployed on **Microsoft Azure App Service** with **Azure Database for PostgreSQL** and automated **GitHub Actions CI/CD**.
 
-This project helps develop core backend skills, including:
-
-- REST API development  
-- Django models, serializers, views, URLs  
-- API design & database interaction  
-- CRUD operations with Django ORM  
+This project demonstrates backend development, REST API design, cloud deployment, and database integration.
 
 ---
 
-## 🌟 Features
+## 🚀 Live API
 
-- Add new vehicles to inventory  
-- Retrieve vehicle list  
-- Update vehicle details  
-- Delete vehicles  
-- JSON-based API responses  
-- Uses Django ORM & SQLite  
-- Clean and modular app structure  
+Base URL
+
+```
+https://vehicle-inventory-api-sathwickhk-fgbnbud3egerdcb8.centralindia-01.azurewebsites.net
+```
+
+Example Endpoint
+
+```
+GET /api/vehicles/
+```
+
+---
+
+## ✨ Features
+
+- Create vehicles
+- Retrieve all vehicles
+- Retrieve vehicle by ID
+- Update vehicle details
+- Delete vehicles
+- JSON REST API
+- Django ORM
+- Azure PostgreSQL database
+- Production deployment on Azure App Service
+- GitHub Actions CI/CD
+- WhiteNoise static file handling
+- Environment variable configuration
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Python 3.x**  
-- **Django**  
-- **Django REST Framework**  
-- **SQLite (default DB, can be replaced with MySQL/PostgreSQL)**  
+### Backend
+
+- Python 3
+- Django
+- Django REST Framework
+
+### Database
+
+- Azure Database for PostgreSQL Flexible Server
+
+### Cloud
+
+- Azure App Service (Linux)
+
+### Deployment
+
+- GitHub Actions
+- Azure Login Action
+- Gunicorn
+- WhiteNoise
+
+### Version Control
+
+- Git
+- GitHub
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 vehicle-inventory-management-system/
-│
+
 ├── manage.py
-├── README.md
-│
+├── requirements.txt
+├── .github/
+│   └── workflows/
 ├── vehicle_inventory/
 │   ├── settings.py
 │   ├── urls.py
 │   └── ...
-│
-└── vehicles/
-    ├── models.py
-    ├── serializers.py
-    ├── views.py
-    ├── urls.py
-    └── migrations/
+├── vehicles/
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   └── migrations/
+└── README.md
 ```
 
 ---
 
-## 🔗 API Endpoints
+## 📌 API Endpoints
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/vehicles/` | Get all vehicles |
-| POST | `/api/vehicles/` | Add a new vehicle |
-| GET | `/api/vehicles/<id>/` | Get a vehicle by ID |
-| PUT | `/api/vehicles/<id>/` | Update a vehicle |
-| DELETE | `/api/vehicles/<id>/` | Delete a vehicle |
+|---------|----------|-------------|
+| GET | `/api/vehicles/` | List all vehicles |
+| POST | `/api/vehicles/` | Create vehicle |
+| GET | `/api/vehicles/<id>/` | Retrieve vehicle |
+| PUT | `/api/vehicles/<id>/` | Update vehicle |
+| DELETE | `/api/vehicles/<id>/` | Delete vehicle |
 
 ---
 
-## 🚙 Vehicle Model
-
-```
-brand  
-model  
-manufacturing_year  
-price
-```
-
-Example JSON:
+## 🚘 Vehicle Schema
 
 ```json
 {
-  "brand": "Honda",
-  "model": "Civic",
-  "manufacturing_year": 2021,
-  "price": 17500
+    "brand": "Skoda",
+    "model": "Slavia Prestige 1.5 TSI DSG",
+    "manufacturing_year": 2026,
+    "price": "1804000.00"
 }
 ```
 
 ---
 
-## ⚙️ Setup Instructions (Optional — for users running locally)
+## ⚙️ Local Setup
+
+Clone the repository
 
 ```bash
-# 1. Install dependencies
-pip install django djangorestframework
+git clone https://github.com/Sathwick-HK/vehicle-inventory-management-system.git
+```
 
-# 2. Run migrations
-python manage.py makemigrations
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run migrations
+
+```bash
 python manage.py migrate
+```
 
-# 3. Start the server
+Start development server
+
+```bash
 python manage.py runserver
 ```
 
-API will be available at:
-```
-http://127.0.0.1:8000/api/vehicles/
-```
+---
+
+## ☁️ Azure Deployment
+
+The application is deployed using:
+
+- Azure App Service
+- Azure Database for PostgreSQL
+- GitHub Actions CI/CD
+- Gunicorn
+- WhiteNoise
+
+Deployment is triggered automatically on every push to the `main` branch.
 
 ---
 
-## 🎯 Purpose of This Project
+## ✅ Tested Functionality
 
-This project demonstrates:
+- Create Vehicle (POST)
+- List Vehicles (GET)
+- Retrieve Vehicle (GET by ID)
+- Update Vehicle (PUT)
+- Delete Vehicle (DELETE)
 
-- Python backend development  
-- REST API architecture  
-- Clean data modeling  
-- CRUD operations  
-
-
-
+All CRUD operations have been successfully verified against Azure PostgreSQL.
 
 ---
 
-## 📌 Status
+## 🎯 Learning Outcomes
 
-This project is part of a learning portfolio and may be expanded with:
+This project demonstrates experience with:
 
-- Authentication  
-- Pagination  
-- Search & filtering  
-- Docker support  
-- Deployment on Render/Heroku  
+- Django
+- Django REST Framework
+- REST API development
+- PostgreSQL
+- Azure App Service
+- Azure Database for PostgreSQL
+- GitHub Actions
+- CI/CD pipelines
+- Production deployment
+- Environment variables
+- Gunicorn
+- WhiteNoise
 
-
-Open for improvement suggestions
 ---
 
+## 📌 Future Enhancements
 
+- JWT Authentication
+- Swagger / OpenAPI Documentation
+- Search & Filtering
+- Pagination
+- Health Check Endpoint
+- Automated API Tests
+- Docker Support
+- Azure Monitor & Application Insights
+
+---
+
+## 👨‍💻 Author
+
+**Sathwick Kashyap**
+
+GitHub:
+https://github.com/Sathwick-HK
