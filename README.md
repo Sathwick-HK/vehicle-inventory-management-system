@@ -136,6 +136,8 @@ This project is part of a learning portfolio and may be expanded with:
 - Docker support  
 - Deployment on Render/Heroku  
 
+
+Open for improvement suggestions
 ---
 
 
